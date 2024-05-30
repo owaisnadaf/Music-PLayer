@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex ">
+        <div class="left ">
+            <div class="head flex rounded">
+                <div class="symbol">
+                    <div class="title">
+                        <img class="icons invert" src="https://cdn.hugeicons.com/icons/airpod-03-stroke-rounded.svg"
+                            alt="airpod-03" width="24" height="24" class="invert" />
+                        Musicert
+                    </div>
+                    <div class="close flex " style="display: none;">
+                        <img width="40px" class="invert" src="close.svg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="home">
+                    <svg class="invert icons" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                    </svg>
+                    Home
+                </div>
+                <div class="search">
+                    <img class="invert icons" src="https://cdn.hugeicons.com/icons/search-01-stroke-rounded.svg"
+                        alt="search-01" width="24" height="24" />
+                    Search
+                </div>
+            </div>
+            <div class="library rounded">
+                <div class="lib2" style="display: flex; justify-content: space-between;">
+                    <p> <span><img class="invert icons" src="library.svg" alt=""></span> Library</p>
+                    <img class="invert" src="https://cdn.hugeicons.com/icons/plus-sign-stroke-rounded.svg"
+                        alt="plus-sign" width="24" height="24" />
+                </div>
+                <div class="songList">
+                    <ul>
+
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded">
+            <div class="nav flex space-between rounded">
+                <div class="nav1 flex invert">
+                    <img class="hamburger" width="38px" src="hamburger.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="nav2 flex space-between">
+                    <button class="btn-sign">Sign up</button><button class="btn-log">Log in</button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h1>Playlist</h1>
+                <div class="card-container">
+
+                    <div class="card">
+                        <div class="play1">
+                            <div class="play2"></div>
+                        </div>
+                        <img src="p1.jpeg" alt="">
+                        <h3>Hot Hits Hindi</h3>
+                        <p>Hottest Hindi music served here.</p>
+                    </div>
+                    <div class="card">
+                        <div class="play1">
+                            <div class="play2"></div>
+                        </div>
+                        <img src="p2.jpeg" alt="">
+                        <h3>Bollywood Mush</h3>
+                        <p>Let these songs be the background score to your love story.</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="songInfo">
+
+                </div>
+                <div class="songBtns ">
+                    <button>
+                        <img id="prev" src="prev.svg" alt="">
+                    </button>
+                    <button>
+                        <img id="play" src="play.svg" alt="">
+                    </button>
+                    <button>
+                        <img id="next" src="next.svg" alt="">
+                    </button>
+                </div>
+                <div class="vol">
+                    <div class="volume">
+                        <img src="volume.svg" alt="">
+                        <input type="range">
+                    </div>
+                    <div class="songTime">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
