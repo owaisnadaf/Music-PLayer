@@ -3,9 +3,11 @@ console.log("Welcome to the Music Player");
 let currSong = new Audio();
 let songs;
 let songUL;
-let currfolder;
+// let currfolder;
 const playMusic = (track) => {
-   currSong.src = `${currfolder}` + track;
+   console.log(track)
+   currSong.src = "/Songs/" + track;
+   // `${currfolder}` +
    console.log(currSong)
    currSong.play();
    play.src = "pause.svg";
@@ -25,15 +27,15 @@ function secondsToMinutesSeconds(seconds) {
 
 
 //Getting the songs
-async function getSongs(folder) {
-   currfolder = folder;
-   let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
+async function getSongs() {
+   // currfolder = folder;
+   let a = await fetch(`http://127.0.0.1:5500/Songs/`);
    let response = await a.text();
    
   
    let div = document.createElement("div");
    div.innerHTML = response;
-   console.log(response)
+   // console.log(response)
    let as = div.getElementsByTagName("a");
    
 
@@ -50,7 +52,7 @@ async function getSongs(folder) {
 
 
 async function main() {
-    songs = await getSongs(`Songs/ncs/`);
+    songs = await getSongs();
  
    //Show all the songs in the playlist
    songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
